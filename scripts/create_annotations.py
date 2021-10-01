@@ -168,7 +168,7 @@ pokemon_map = {
     "mew": 151
 }
 
-annotation_str = ''
+annotation_str = 'img_path,pokemon_id\n'
 name_count = {}
 
 os.chdir('./data/images')

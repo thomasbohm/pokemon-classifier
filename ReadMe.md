@@ -17,7 +17,7 @@ data/
 ```
 
 Using the annotations file, all image paths are mapped to corresponding target ids:
-|img_name|pokemon id|
+|img_name|pokemon_id|
 |--------|----------|
 |abra001.jpg|63|
 |...|...|
