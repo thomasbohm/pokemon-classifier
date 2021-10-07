@@ -1,5 +1,5 @@
 # Pokemon Classifier
-The goal of this project is to classify pokemon using Deep Learning and PyTorch.
+The goal of this project is to classify **151 distinct** pokemon using Deep Learning and PyTorch.
 
 ![Pokemon images with corresponding pokemon names](sketch.svg)
 
