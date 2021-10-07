@@ -1,5 +1,8 @@
 # Pokemon Classifier
 The goal of this project is to classify pokemon using Deep Learning and PyTorch.
+
+![Pokemon images with corresponding pokemon names](sketch.svg)
+
 ## Pokemon Dataset
 Since no solid dataset was found, a new one was created containing images of the **151 first-generation pokemon**. 
 
