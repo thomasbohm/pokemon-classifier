@@ -42,11 +42,12 @@ Moreover, a training loop is defined given these parameters:
 - optimizer: [Adam](https://pytorch.org/docs/stable/generated/torch.optim.Adam.html) with initial lr of `0.001` and reduction factor `0.9` per epoch
 
 ## Results & Limitations
-Running `25` epochs, the final result on the test set shows **99.93%** accuracy which, however, might be biased/missleading. Since the dataset was created scraping google images, there is a high probability of having many duplicates in the images. This can lead to having correlations between the evaluation data and the final test data, i.e., it cannot be said that the model does generalize well for different input.
+Running `25` epochs, the final accuracy on the test set is **84.97%**. However, this result might be biased/missleading. Since the dataset was created scraping google images, there is a high probability of having many duplicates in the images. This can lead to having correlations between the evaluation data and the final test data, i.e., it cannot be said that the model does generalize well for different input.
 
-To be able to use the trained model for inference, a file, `best.pt`, is included in this directory containing the model's weights which performed best.
+To be able to use the trained model for inference, a file, `best.pt`, is included in this directory containing the model's best weights.
 
 ## Next Steps
 To assure the model will perform on newly unseen images as well as on the used data, the dataset should be further expanded and classes distributed equally. Furthermore, disturbing images should be carefully cleaned to reduce noise.
 
-To apply the trained model in practice, a simple application could be build allowing the user to feed in their own footage.
+## Webapp using the trained model
+Check out my project [Pokemon Webapp](https://github.com/thomasbohm/pokemon-webapp) to see the model in action!
