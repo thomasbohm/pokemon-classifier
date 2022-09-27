@@ -1,5 +1,8 @@
 # Pokemon Classifier
-The goal of this project is to classify **151 distinct** pokemon using Deep Learning and PyTorch.
+
+The goal of this project is to classify pokemon.
+
+Nothing fancy, just an image classification task. However, the dataset was self-created and the training pipeline is set up in plain PyTorch. The final model can be used in a web application (see. [Pokemon Webapp](https://github.com/thomasbohm/pokemon-webapp)) to predict camera footage.
 
 ![Pokemon images with corresponding pokemon names](sketch.svg)
 
@@ -14,6 +17,7 @@ data/
     annotations.csv
     images/
         abra001.jpg
+        abra002.jpg
         ...
         zubat100.jpg
 ```
@@ -23,7 +27,7 @@ Using the annotations file, all image paths are mapped to corresponding target i
 |--------|----------|
 |abra001.jpg|63|
 |...|...|
-|zubat079.jpg|41|
+|zubat100.jpg|41|
 
 To recreate the dataset follow this short instruction:
 1. Run `python scripts/download_dataset.py` to download the top 100 images for one pokemon class from google images.
